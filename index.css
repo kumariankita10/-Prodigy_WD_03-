@@ -1,0 +1,52 @@
+
+body {
+    background-color: peachpuff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 300px;
+}
+
+
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f2;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cell.clicked {
+    background-color: peachpuff; 
+}
+
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.reset-button {
+    display: block;
+    margin: 20px auto;
+}
